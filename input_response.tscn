@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://caph1v4ps173w"]
+
+[ext_resource type="FontFile" uid="uid://h5nbqp4lkb14" path="res://IBMPlexMono-Regular.ttf" id="1_56ydi"]
+[ext_resource type="Script" path="res://input_response.gd" id="1_vwxnu"]
+[ext_resource type="FontFile" uid="uid://bn1o54s0lrksw" path="res://IBMPlexMono-SemiBold.ttf" id="2_oimyc"]
+
+[node name="InputResponse" type="VBoxContainer"]
+theme_override_constants/separation = 0
+script = ExtResource("1_vwxnu")
+
+[node name="InputHistory" type="Label" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.466667, 0.466667, 0.466667, 1)
+theme_override_fonts/font = ExtResource("1_56ydi")
+theme_override_font_sizes/font_size = 18
+text = "> This is what the user typed"
+
+[node name="Response" type="Label" parent="."]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_oimyc")
+theme_override_font_sizes/font_size = 18
+text = "This is what the game will give back"
